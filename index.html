@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT-5</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+    <div class="container">
+    <div class="tool">
+
+        <div class="form-group">
+            <label for="all">Border-radius  <span id="all_value">0px</span></label>  
+            <input type="range" value="0" min="0" max="350" name="" id="all">
+        </div>
+
+        <div class="form-group">
+            <label for="all">Border-width  <span id="Labelwidth">0px</span></label>  
+            <input type="range" value="0" min="0" max="200" name="" id="Border_width">
+        </div>
+
+
+<div class="form-group">
+<label for="border-style">Border-Style</label>
+<select id="border_style">
+<option>solid</option>
+<option>dashed</option>
+<option>double</option>
+<option>dotted</option>
+<option>groove</option>
+<option>ridge</option>
+<option>inset</option>
+<option>outset</option>
+<option>none</option>
+<option>hidden</option>
+</select>
+ </div>
+      
+        <div class="form-group">
+            <textarea id="code"></textarea>
+        </div>
+
+
+        <div class="form-group">
+            <button id="btncpy">COPY CODE</button>
+        </div>
+        
+
+    </div>
+    </div>
+
+
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
+
+
+
+<!-- 
+
+    document.addEventListener('DOMContentLoaded',()=>{
+    ...........................
+    ...........................
+    ...........................
+    });                                             for run the function after load the Entire Document.
+
+
+const radius_spanText= allBorder.value;
+const all_Border_width_value=all_Border_width.value;     for store the VALUE of the IDs element  to the new variable. so we can use .value.
+
+
+    querySelector for  select id as well as class.
+    getElementById for select id only.
+    querySelectorAll for select more than one class or id.
+
+     container.style.cssText=coding;   for apply CSS to HTML through JS
+
+     all_value.innerText= radius_spanText+"px";   here innerText is used to place the text in the HTML document as a text. 
+
+ 
+ 
+coding=`
+border-radius:${radius_spanText}px;    
+border:${all_Border_width_value}px ${border_style} blue;
+`;                     This is TEMPLATE STRING ,  In this method we can display the value of the variable in HTML document.
+
+
+allBorder.addEventListener("mousemove" , allBorderUpdate);     here mousemove performs the function when we move the mouse on the particular element or div.
+allBorder.addEventListener("change", allBorderUpdate);       here change performs the function when we click the key(left arrow & right arrow) on the particular element or div.
+
+
+ copybtn.addEventListener("click",()=>{
+        document.querySelector(' textarea').select();
+        document.execCommand('copy');
+        alert("CODE COPIED");
+ });                                This is a arrow function and also anonymys function, here we can use click event for button.
+                                    when we click the button the arrow function will work.
+                                    the id name of button is stored into the variable copybtn.
+                                    .select() function is used to select the content in the particular element or div.
+                                    Here ,  we use execCommand for copy the particular content , this execCommand is DEPRECATED which means it is old version and it may be not work in future. so we should use new code.
+
+
+allBorderUpdate();  This is nothing but function calling.
+
+border_style=this.value;   here   this.value    performs to store the value of this particular element to the variable(border_style)
+
+ -->
+
+ 

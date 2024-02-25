@@ -1,0 +1,99 @@
+ *{                  /* UNIVERSAL TAG   */
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+     width:100vw; /*    v for viewport     w for width */
+     height:100vh;  /*    v for viewport     h for height*/
+     background-color:#d6ccc2;  
+     display:flex;
+     justify-content:center;
+     align-items:center;
+
+}
+
+.container{
+    background-color:white;
+    width:700px;
+    height:700px;
+    position:relative;
+    border-radius:5px;
+}
+
+.tool{
+    width:450px;
+    height:450px;
+    background-color:#ccd5ae;   
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:5px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:5px;
+
+}
+
+.form-group{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    padding: 0px 10px;
+    margin-top:10px;
+
+}
+
+.form-group input{
+    margin-top:10px;
+}
+
+.form-group label{
+    color:#001d3d;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form-group label span{
+    background-color:aliceblue;
+    color:#003049;
+    padding:5px;
+    margin:20px;
+    border-radius:5px;
+
+}
+
+.form-group #border_style{
+margin:10px;
+width:68px;
+height:20px;
+border-radius:4px;
+}
+
+.form-group textarea{
+    gap:5px;
+    height:100px;
+    border-radius:4px;
+    padding:5px;
+    font-size:15px;
+    margin:10px;
+    color:black;
+    outline:none;
+    
+   
+}
+
+.form-group button{
+margin:5px 60px;
+font-size:15px;
+color:white;
+background-color:green;
+padding:6px;
+font-weight:500;
+
+border:none;
+border-radius:5px;
+}
